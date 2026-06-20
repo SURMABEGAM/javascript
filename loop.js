@@ -20,6 +20,22 @@ while (m > 0) {
   if (m <= 1) {
     break;
   }
-  console.log(m);
+  // console.log(m);
   m--;
+}
+
+for (let i = 2; i < 10; i++) {
+  if (i % 2 === 1) {
+    continue;
+  }
+  console.log(i);
+}
+
+let x = 0;
+while (x < 10) {
+  x++;
+  if (x % 6 === 0) {
+    continue;
+  }
+  console.log(x);
 }
