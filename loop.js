@@ -28,7 +28,7 @@ for (let i = 2; i < 10; i++) {
   if (i % 2 === 1) {
     continue;
   }
-  console.log(i);
+  //console.log(i);
 }
 
 let x = 0;
@@ -37,5 +37,30 @@ while (x < 10) {
   if (x % 6 === 0) {
     continue;
   }
-  console.log(x);
+  //console.log(x);
+}
+
+const name = ["suma", "najma", "veto", "liza", "aklima", "surma"];
+// console.log(name[5]);
+
+for (let i = 0; i < name.length; i++) {
+  //console.log(i);
+  // console.log(name[i]);
+}
+
+const number = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+for (let s = 0; s < number.length; s++) {
+  // console.log(number[s]);
+}
+
+let k = 0;
+while (k < name.length) {
+  // console.log(name[k]);
+  k++;
+}
+
+let h = 0;
+while (h < number.length) {
+  //console.log(number[h]);
+  h++;
 }
