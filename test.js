@@ -40,9 +40,47 @@ const number = [15, 5, 80, 30, 100, 40];
 
 // const min = Math.min(...number);
 // console.log(min);
-let min = [0];
-for (const num of number)
-  if (num < min) {
-    min = num;
+// let min = [0];
+// for (const num of number)
+// if (num < min) {
+// min = num;
+// }
+// console.log(min);
+
+//5. Even Numbers
+
+const number2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i <= 10; i = i + 2) {
+// console.log(i);
+// }
+
+//6. Even Numbers
+// for (let i = 1; i <= 10; i = i + 2) {
+// console.log(i);
+// }
+
+// 7.Reverse
+const number3 = [1, 2, 3, 4, 5];
+// for (let i = number3.length; i >= 0; i--) {
+//console.log(number3[i]);
+// }
+// const result = number3.reverse();
+// console.log(result);
+
+//8.Count Even Numbers
+const numbers4 = [
+  2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 10,
+];
+let count = 0;
+// for (const num of numbers4) {
+//   if (num % 2 === 0) {
+// count++;
+//   }
+// }
+
+for (i = 0; i < numbers4.length; i++) {
+  if (numbers4[i] % 2 === 0) {
+    count++;
   }
-console.log(min);
+}
+console.log(count);
