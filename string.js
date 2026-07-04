@@ -38,5 +38,10 @@ let numbers = [10, 20, 30, 40, 50];
 let sum = 0;
 for (i = 0; i < numbers.length; i++) {
   sum = sum + numbers[i];
-  console.log(sum);
+  // console.log(sum);
 }
+
+let age = 25;
+let Age = 30;
+console.log(age); // 25
+console.log(Age); // 30
