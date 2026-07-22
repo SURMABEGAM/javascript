@@ -77,8 +77,8 @@ for (let i = 1; i <= count; i++) {
 }
 
 // string enclosed within single quotes
-let fruit = 'apple';
-console.log(fruit)
+let fruit = "apple";
+console.log(fruit);
 
 // string enclosed within double quotes
 let country = "USA";
@@ -87,3 +87,6 @@ console.log(country);
 // string enclosed within backticks
 let result = `fail`;
 console.log(result);
+
+let country = 120120;
+console.log(country);
