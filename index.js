@@ -90,3 +90,5 @@ console.log(result);
 
 let country = 120120;
 console.log(country);
+let greeting = "hello";
+console.log(greeting[1]); 
