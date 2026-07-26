@@ -92,3 +92,7 @@ let country = 120120;
 console.log(country);
 let greeting = "hello";
 console.log(greeting[1]); 
+
+let greeting = "hello";
+let firstTwo = greeting[0] + greeting[1]; // "he"
+console.log(firstTwo);
