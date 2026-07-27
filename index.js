@@ -100,3 +100,11 @@ console.log(firstTwo);
 let poem =
   "Roses are red,\nViolets are blue,\nJavaScript is fun,\nAnd so are you.";
 console.log(poem);
+
+let name = prompt("তোমার নাম কী?");
+let age = Number(prompt("তোমার বয়স কত?"));
+
+alert("স্বাগতম " + name);
+
+console.log(name);
+console.log(age);
