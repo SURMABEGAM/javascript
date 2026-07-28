@@ -161,4 +161,9 @@ console.log(learningIsFunSentence.indexOf("learning"));
 let phrase = "JavaScript is awesome!";
 let result = phrase.includes("awesome");
 
-console.log(result);  // true
+console.log(result); // true
+
+let phrase = "JavaScript is awesome!";
+let result = phrase.includes("Awesome");
+
+console.log(result); // false
