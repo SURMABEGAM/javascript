@@ -24,24 +24,24 @@ if (price >= 5000) {
 const age = 50;
 
 if (age <= 12) {
-  console.log(" you are free food and drink");
+  // console.log(" you are free food and drink");
   const discount = (price * 100) / 100;
   console.log(discount);
   const payableAmount = price - discount;
-  console.log(payableAmount);
+  // console.log(payableAmount);
 } else if (age >= 70) {
   console.log(" you are eligible for senior discount");
   const discount = (price * 50) / 100;
-  console.log(discount);
+  // console.log(discount);
   const payableAmount = price - discount;
-  console.log(payableAmount);
+  // console.log(payableAmount);
 } else if (age >= 50) {
   //25% discount
-  console.log(" you are eligible for 25% discount");
+  // console.log(" you are eligible for 25% discount");
   const discount = (price * 25) / 100;
-  console.log(discount);
+  // console.log(discount);
   const payableAmount = price - discount;
-  console.log(payableAmount);
+  // console.log(payableAmount);
 } else {
-  console.log("please pay for food and drink");
+  // console.log("please pay for food and drink");
 }

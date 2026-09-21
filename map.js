@@ -1,4 +1,6 @@
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const num = numbers.map((num) => num * 2);
-console.log(num);
-console.log(numbers);
+// const num = numbers.map((num) => num * 2);
+// console.log(num);
+// console.log(numbers);
+const min = numbers.map((min) => min - 5);
+console.log(min);
