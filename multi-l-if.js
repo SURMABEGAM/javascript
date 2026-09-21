@@ -26,7 +26,7 @@ const age = 50;
 if (age <= 12) {
   // console.log(" you are free food and drink");
   const discount = (price * 100) / 100;
-  console.log(discount);
+  // console.log(discount);
   const payableAmount = price - discount;
   // console.log(payableAmount);
 } else if (age >= 70) {
