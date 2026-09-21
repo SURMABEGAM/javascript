@@ -26,7 +26,33 @@ var jomi2 = 30;
 var jomi3 = 15;
 // console.log(jomi3 / 2);
 var jomi4 = 4120;
-console.log(jomi4 / 2);
+// console.log(jomi4 / 2);
 
 var jomi5 = 2060;
-console.log(jomi5 / 2);
+// console.log(jomi5 / 2);
+// problem1
+var money = 1000;
+// console.log(money / 2);
+// problem2
+var number = 75;
+// console.log(number / 2);
+//problem3
+var price = 250;
+var quantity = 4;
+var total = price * quantity;
+// console.log(total);
+// console.log(price * quantity);
+//problem 4
+var money = 1500;
+var spent = 650;
+console.log(money - spent);
+var remaining = money - spent;
+console.log(remaining);
+//problem 5
+var bangla = 80;
+var english = 70;
+var math = 90;
+console.log((bangla + english + math) / 3);
+
+var average = (bangla + english + math) / 3;
+console.log(average);
