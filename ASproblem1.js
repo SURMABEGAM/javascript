@@ -123,3 +123,42 @@ if (data >= 10) {
 } else {
   console.log(" No Internet");
 }
+
+// problem 7
+var age = 22;
+if (age >= 18) {
+  console.log("Eligible for Driving License");
+} else {
+  console.log("Not Eligible");
+}
+
+var username = "admin";
+var password = "12345";
+if (username === "admin" && password === "12345") {
+  console.log("Login Successful");
+} else {
+  console.log("Invalid Username or Password");
+}
+
+var marks = 85;
+var attendance = 90;
+if (marks >= 80 && attendance >= 80) {
+  console.log("Scholarship");
+} else {
+  console.log("No Scholarship");
+}
+
+var day = "Friday";
+if (day === "Friday" || day === "Saturday") {
+  console.log("Weekend");
+} else {
+  console.log("Working Day");
+}
+
+var age = 25;
+var experience = 2;
+if (age >= 21 && experience >= 2) {
+  console.log("Eligible");
+} else {
+  console.log("Not Eligible");
+}
