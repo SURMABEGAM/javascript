@@ -45,14 +45,48 @@ var total = price * quantity;
 //problem 4
 var money = 1500;
 var spent = 650;
-console.log(money - spent);
+// console.log(money - spent);
 var remaining = money - spent;
-console.log(remaining);
+// console.log(remaining);
 //problem 5
 var bangla = 80;
 var english = 70;
 var math = 90;
-console.log((bangla + english + math) / 3);
+// console.log((bangla + english + math) / 3);
 
 var average = (bangla + english + math) / 3;
-console.log(average);
+// console.log(average);
+
+// ASproblem2
+
+var money = 50500;
+if (money >= 45000) {
+  // console.log("laptop");
+} else if (money >= 10000) {
+  // console.log("cycle");
+} else {
+  // console.log("Chocolate");
+}
+
+// problem 6
+var marks = 65;
+if (marks >= 80) {
+  // console.log("A+");
+} else if (marks >= 70) {
+  // console.log("A");
+} else if (marks >= 60) {
+  // console.log("B");
+} else {
+  // console.log("Fail");
+}
+
+var price = 3500;
+if (price >= 5000) {
+  console.log("20% Discount");
+} else if (price >= 3000) {
+  console.log("10% Discount");
+} else if (price >= 1000) {
+  console.log("5% Discount");
+} else {
+  console.log("No Discount");
+}
