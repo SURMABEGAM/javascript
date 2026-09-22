@@ -83,8 +83,15 @@ if (marks >= 80) {
 var price = 3500;
 if (price >= 5000) {
   // console.log("20% Discount");
+  var discount = (price * 20) / 100;
+  console.log(discount);
+  var payAmount = price - discount;
+  console.log(payAmount);
 } else if (price >= 3000) {
   // console.log("10% Discount");
+  var discount = (price * 10) / 100;
+  var payAmount = price - discount;
+  console.log(discount, "abog", payAmount);
 } else if (price >= 1000) {
   // console.log("5% Discount");
 } else {
