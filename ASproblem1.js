@@ -82,11 +82,44 @@ if (marks >= 80) {
 
 var price = 3500;
 if (price >= 5000) {
-  console.log("20% Discount");
+  // console.log("20% Discount");
 } else if (price >= 3000) {
-  console.log("10% Discount");
+  // console.log("10% Discount");
 } else if (price >= 1000) {
-  console.log("5% Discount");
+  // console.log("5% Discount");
 } else {
-  console.log("No Discount");
+  // console.log("No Discount");
+}
+
+var age = 70;
+if (age >= 60) {
+  // console.log(" Senior Citizen");
+} else if (age >= 18) {
+  // console.log(" Adult");
+} else if (age >= 13) {
+  // console.log("Teenager");
+} else {
+  // console.log("Child");
+}
+
+var temperature = 30;
+if (temperature >= 35) {
+  // console.log("Very Hot");
+} else if (temperature >= 25) {
+  // console.log("Normal");
+} else if (temperature >= 15) {
+  // console.log("Cool");
+} else {
+  // console.log("Cold");
+}
+
+var data = 2;
+if (data >= 10) {
+  console.log("Heavy User");
+} else if (data >= 5) {
+  console.log("Regular User");
+} else if (data >= 1) {
+  console.log("Light User");
+} else {
+  console.log(" No Internet");
 }
