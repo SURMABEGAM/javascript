@@ -13,9 +13,9 @@ let temperature = 35;
 temperature >= 30 ? console.log("Hot") : console.log("Normal");
 
 // problem4
-let marks = 75;
+// let marks = 75;
 
-marks >= 40 ? console.log("Pass") : console.log("Fail");
+// marks >= 40 ? console.log("Pass") : console.log("Fail");
 
 // problem 5
 let salary = 35000;
@@ -30,9 +30,14 @@ age >= 18 ? "Can Drive" : "Cannot Drive";
 let number = 17;
 number % 2 === 0 ? "Even Number" : "Odd Number";
 
+// problem :8
 let username = "admin";
 let password = "12345";
 
 username === "admin" && password === "12345"
   ? "Login Successful"
   : "Invalid Username or Password";
+
+//   problem:9
+let marks = 75;
+marks >=80 ? : 
