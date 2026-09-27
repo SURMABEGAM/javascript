@@ -51,8 +51,9 @@ const result =
           ? "c"
           : "Fail";
 
-console.log(result);
+// console.log(result);
 
+// problem 10
 let salary = 5000;
 
 const beton =
@@ -63,4 +64,13 @@ const beton =
       : salary >= 20000
         ? "5% Tax"
         : "NO Tax";
-console.log(beton);
+// console.log(beton);
+
+// problem 11
+function checkDrivingAge(age) {
+  // ternary
+  age >= 18 ? "Can  Drive" : "Connot Drive ";
+}
+
+checkDrivingAge(20);
+checkDrivingAge(15);
