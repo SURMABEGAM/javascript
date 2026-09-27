@@ -20,7 +20,7 @@ temperature >= 30 ? console.log("Hot") : console.log("Normal");
 // problem 5
 let salary1 = 35000;
 
-salary1 >= 30000 ? console.log("High Salary") : console.log("Low Salary");
+// salary1 >= 30000 ? console.log("High Salary") : console.log("Low Salary");
 
 // problem:6
 let age = 22;
@@ -68,9 +68,48 @@ const beton =
 
 // problem 11
 function checkDrivingAge(age) {
-  // ternary
-  age >= 18 ? "Can  Drive" : "Connot Drive ";
+  age >= 18 ? console.log("Can  Drive") : console.log("Connot Drive");
 }
 
 checkDrivingAge(20);
-checkDrivingAge(15);
+checkDrivingAge(10);
+
+// problem 12
+function checkNumber(number) {
+  number % 2 === 0 ? console.log("Even") : console.log("Odd");
+}
+
+checkNumber(10);
+checkNumber(7);
+
+// problem13
+
+function checkResult(marks) {
+  marks >= 40 ? console.log("Pass") : console.log("Fail");
+}
+checkResult(75);
+checkResult(35);
+
+// problem 14
+function checkSalary(salary) {
+  salary >= 30000 ? console.log("Good Salary") : console.log("Low Salary");
+}
+checkSalary(35000);
+checkSalary(25000);
+
+// problem 15
+function getGrade(marks) {
+  marks >= 80
+    ? console.log("A+")
+    : marks >= 70
+      ? console.log("A")
+      : marks >= 60
+        ? console.log("B")
+        : marks >= 50
+          ? console.log("C")
+          : console.log("Fail");
+}
+
+getGrade(85);
+getGrade(62);
+getGrade(45);
