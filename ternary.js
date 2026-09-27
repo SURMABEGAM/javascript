@@ -40,4 +40,12 @@ username === "admin" && password === "12345"
 
 //   problem:9
 let marks = 75;
-marks >=80 ? : 
+marks >= 80
+  ? "A+"
+  : marks >= 70
+    ? "A"
+    : marks >= 60
+      ? "B"
+      : marks >= 50
+        ? "c"
+        : "Fail";

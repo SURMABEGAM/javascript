@@ -81,12 +81,12 @@ let fruit = "apple";
 console.log(fruit);
 
 // string enclosed within double quotes
-let country = "USA";
-console.log(country);
+let country1 = "USA";
+console.log(country1);
 
 // string enclosed within backticks
-let result = `fail`;
-console.log(result);
+let result11 = `fail`;
+console.log(result11);
 
 let country = 120120;
 console.log(country);
