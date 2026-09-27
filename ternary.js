@@ -18,9 +18,9 @@ temperature >= 30 ? console.log("Hot") : console.log("Normal");
 // marks >= 40 ? console.log("Pass") : console.log("Fail");
 
 // problem 5
-let salary = 35000;
+let salary1 = 35000;
 
-salary >= 30000 ? console.log("High Salary") : console.log("Low Salary");
+salary1 >= 30000 ? console.log("High Salary") : console.log("Low Salary");
 
 // problem:6
 let age = 22;
@@ -39,13 +39,28 @@ username === "admin" && password === "12345"
   : "Invalid Username or Password";
 
 //   problem:9
-let marks = 75;
-marks >= 80
-  ? "A+"
-  : marks >= 70
-    ? "A"
-    : marks >= 60
-      ? "B"
-      : marks >= 50
-        ? "c"
-        : "Fail";
+let marks = 5;
+const result =
+  marks >= 80
+    ? "A+"
+    : marks >= 70
+      ? "A"
+      : marks >= 60
+        ? "B"
+        : marks >= 50
+          ? "c"
+          : "Fail";
+
+console.log(result);
+
+let salary = 5000;
+
+const beton =
+  salary >= 50000
+    ? "20% Tax"
+    : salary >= 30000
+      ? "10% Tax"
+      : salary >= 20000
+        ? "5% Tax"
+        : "NO Tax";
+console.log(beton);
