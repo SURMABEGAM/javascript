@@ -19,7 +19,7 @@ function shopping(price) {
   }
 }
 
-shopping(5000);
+// shopping(5000);
 
 //problem2
 //**salary >= 50000 → 20% tax
@@ -48,9 +48,53 @@ function calculateSalary(salary) {
   }
 }
 
-calculateSalary(50000);
-calculateSalary(30000);
-calculateSalary(20000);
-calculateSalary(10000);
-calculateSalary(5000);
-calculateSalary(500);
+// calculateSalary(50000);
+// calculateSalary(30000);
+// calculateSalary(20000);
+// calculateSalary(10000);
+// calculateSalary(5000);
+// calculateSalary(500);
+
+// problem :1
+function checkAge(age) {
+  return age >= 18 ? "Adult" : "Minor";
+}
+
+const resultCheckAge = checkAge(10);
+console.log(resultCheckAge);
+
+//problem:2
+function checkNumber(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
+}
+const checkNumberResult = checkNumber(11);
+console.log(checkNumberResult);
+
+// problem:3
+function checkMarks(marks) {
+  return marks >= 50 ? "Pass" : "Fail";
+}
+const resultCheckMarks = checkMarks(33);
+console.log(resultCheckMarks);
+
+// PROBLEM :4
+function checkSalary(salary) {
+  return salary >= 30000 ? "High" : "Low";
+}
+const resultCheckSalary = checkSalary(50000);
+console.log(resultCheckSalary);
+
+// problem 5
+function getGrade(marks) {
+  return marks >= 80
+    ? "A+"
+    : marks >= 70
+      ? "A"
+      : marks >= 60
+        ? "B"
+        : marks >= 50
+          ? "C"
+          : "Fail";
+}
+const resultGetGrade = getGrade(80);
+console.log(resultGetGrade);

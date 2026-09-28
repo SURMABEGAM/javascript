@@ -40,7 +40,7 @@ username === "admin" && password === "12345"
 
 //   problem:9
 let marks = 5;
-const result =
+const result1 =
   marks >= 80
     ? "A+"
     : marks >= 70
@@ -51,7 +51,7 @@ const result =
           ? "c"
           : "Fail";
 
-// console.log(result);
+// console.log(result1);
 
 // problem 10
 let salary = 5000;
@@ -68,15 +68,15 @@ const beton =
 
 // problem 11
 function checkDrivingAge(age) {
-  age >= 18 ? console.log("Can  Drive") : console.log("Connot Drive");
+  return age >= 18 ? "Can  Drive" : "Cannot Drive";
 }
 
-checkDrivingAge(20);
-checkDrivingAge(10);
+let result = checkDrivingAge(20);
+console.log(result);
 
 // problem 12
 function checkNumber(number) {
-  number % 2 === 0 ? console.log("Even") : console.log("Odd");
+  return number % 2 === 0 ? console.log("Even") : console.log("Odd");
 }
 
 checkNumber(10);
