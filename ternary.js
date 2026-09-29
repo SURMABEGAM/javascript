@@ -72,30 +72,30 @@ function checkDrivingAge(age) {
 }
 
 let result = checkDrivingAge(20);
-console.log(result);
+// console.log(result);
 
 // problem 12
 function checkNumber(number) {
   return number % 2 === 0 ? console.log("Even") : console.log("Odd");
 }
 
-checkNumber(10);
-checkNumber(7);
+// checkNumber(10);
+// checkNumber(7);
 
 // problem13
 
 function checkResult(marks) {
   marks >= 40 ? console.log("Pass") : console.log("Fail");
 }
-checkResult(75);
-checkResult(35);
+// checkResult(75);
+// checkResult(35);
 
 // problem 14
 function checkSalary(salary) {
   salary >= 30000 ? console.log("Good Salary") : console.log("Low Salary");
 }
-checkSalary(35000);
-checkSalary(25000);
+// checkSalary(35000);
+// checkSalary(25000);
 
 // problem 15
 function getGrade(marks) {
@@ -110,9 +110,9 @@ function getGrade(marks) {
           : console.log("Fail");
 }
 
-getGrade(85);
-getGrade(62);
-getGrade(45);
+// getGrade(85);
+// getGrade(62);
+// getGrade(45);
 
 // Ternary + Logical Operator Practice
 // Problem 1 — Login 🔐
@@ -120,9 +120,65 @@ function login(username, password) {
   // username admin AND password 12345
   // → "Login Successful"
   // অন্যথায় → "Invalid Login"
-  return username === "admin"&& password === "123455"? "Login Successful" :"Invalid Login"
+  return username === "admin"&& password === "12345"? "Login Successful" :"Invalid Login"
 }
 
 let loginResult = login("admin", "12345");
 let login1Result = login ("surma","55555")
 console.log(loginResult,login1Result)
+
+// Problem 2 — Driving License 🚗
+
+function canDrive(age, hasLicense) {
+  // age >= 18 AND hasLicense === true
+  // → "Can Drive"
+  // অন্যথায় → "Cannot Drive"
+  return age >=18 && hasLicense === true ?"Can Drive":"Cannot Drive";
+}console.log(canDrive(25, true));
+console.log(canDrive(25, false));
+console.log(canDrive(16, true));
+
+
+// Problem 3 — Discount 🛒
+function checkDiscount(age, isMember) {
+  // age >= 60 OR isMember === true
+  // → "Discount Available"
+  // অন্যথায় → "No Discount"
+  return age>=60 || isMember === true ?"Discount Available" :"No Discount"
+}
+
+console.log(checkDiscount(65, false));
+console.log(checkDiscount(30, true));
+console.log(checkDiscount(30, false));
+
+// Problem 4 — Job Eligibility 💼
+function checkJobEligibility(age, experience) {
+  // age >= 18 AND experience >= 1
+  // → "Eligible"
+  // অন্যথায় → "Eligible"
+  return age >= 18 && experience >= 1 ?"Eligible":" Not Eligible"
+}
+
+console.log(checkJobEligibility(25, 2));
+console.log(checkJobEligibility(20, 0));
+
+// Problem 5 ⭐ — Scholarship 🎓
+function checkScholarship(marks, attendance) {
+  // marks >= 80 AND attendance >= 80
+  // → "Scholarship Available"
+  // অন্যথায় → "Not Eligible"
+  return  marks >= 80 && attendance >= 80 ? "Scholarship Available":"Not Eligible";
+}
+
+console.log(checkScholarship(85, 90));
+console.log(checkScholarship(85, 70));
+console.log(checkScholarship(75, 90));
+
+function checkAdmission(marks, age) {
+  // marks >= 80 AND age >= 18
+  // → "Admission Approved"
+  // অন্যথায় → "Admission Rejected"
+  return marks >= 80 && age >= 18 ?"Admission Approved" :"Admission Rejected"
+}
+console.log(checkAdmission(90,17))
+console.log(checkAdmission(80,27))  
