@@ -113,3 +113,16 @@ function getGrade(marks) {
 getGrade(85);
 getGrade(62);
 getGrade(45);
+
+// Ternary + Logical Operator Practice
+// Problem 1 — Login 🔐
+function login(username, password) {
+  // username admin AND password 12345
+  // → "Login Successful"
+  // অন্যথায় → "Invalid Login"
+  return username === "admin"&& password === "123455"? "Login Successful" :"Invalid Login"
+}
+
+let loginResult = login("admin", "12345");
+let login1Result = login ("surma","55555")
+console.log(loginResult,login1Result)
