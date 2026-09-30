@@ -120,46 +120,48 @@ function login(username, password) {
   // username admin AND password 12345
   // → "Login Successful"
   // অন্যথায় → "Invalid Login"
-  return username === "admin"&& password === "12345"? "Login Successful" :"Invalid Login"
+  return username === "admin" && password === "12345"
+    ? "Login Successful"
+    : "Invalid Login";
 }
 
 let loginResult = login("admin", "12345");
-let login1Result = login ("surma","55555")
-console.log(loginResult,login1Result)
+let login1Result = login("surma", "55555");
+// console.log(loginResult,login1Result)
 
 // Problem 2 — Driving License 🚗
 
 function canDrive(age, hasLicense) {
   // age >= 18 AND hasLicense === true
   // → "Can Drive"
-  // অন্যথায় → "Cannot Drive"
-  return age >=18 && hasLicense === true ?"Can Drive":"Cannot Drive";
-}console.log(canDrive(25, true));
-console.log(canDrive(25, false));
-console.log(canDrive(16, true));
-
+  // অন্যথায় → "Cannot Drive"
+  return age >= 18 && hasLicense === true ? "Can Drive" : "Cannot Drive";
+}
+// console.log(canDrive(25, true));
+// console.log(canDrive(25, false));
+// console.log(canDrive(16, true));
 
 // Problem 3 — Discount 🛒
 function checkDiscount(age, isMember) {
   // age >= 60 OR isMember === true
   // → "Discount Available"
   // অন্যথায় → "No Discount"
-  return age>=60 || isMember === true ?"Discount Available" :"No Discount"
+  return age >= 60 || isMember === true ? "Discount Available" : "No Discount";
 }
 
-console.log(checkDiscount(65, false));
-console.log(checkDiscount(30, true));
-console.log(checkDiscount(30, false));
+// console.log(checkDiscount(65, false));
+// console.log(checkDiscount(30, true));
+// console.log(checkDiscount(30, false));
 
 // Problem 4 — Job Eligibility 💼
 function checkJobEligibility(age, experience) {
   // age >= 18 AND experience >= 1
   // → "Eligible"
   // অন্যথায় → "Eligible"
-  return age >= 18 && experience >= 1 ?"Eligible":" Not Eligible"
+  return age >= 18 && experience >= 1 ? "Eligible" : " Not Eligible";
 }
 
-console.log(checkJobEligibility(25, 2));
+// console.log(checkJobEligibility(25, 2));
 console.log(checkJobEligibility(20, 0));
 
 // Problem 5 ⭐ — Scholarship 🎓
@@ -167,18 +169,40 @@ function checkScholarship(marks, attendance) {
   // marks >= 80 AND attendance >= 80
   // → "Scholarship Available"
   // অন্যথায় → "Not Eligible"
-  return  marks >= 80 && attendance >= 80 ? "Scholarship Available":"Not Eligible";
+  return marks >= 80 && attendance >= 80
+    ? "Scholarship Available"
+    : "Not Eligible";
 }
 
-console.log(checkScholarship(85, 90));
-console.log(checkScholarship(85, 70));
-console.log(checkScholarship(75, 90));
+// console.log(checkScholarship(85, 90));
+// console.log(checkScholarship(85, 70));
+// console.log(checkScholarship(75, 90));
 
 function checkAdmission(marks, age) {
   // marks >= 80 AND age >= 18
   // → "Admission Approved"
   // অন্যথায় → "Admission Rejected"
-  return marks >= 80 && age >= 18 ?"Admission Approved" :"Admission Rejected"
+  return marks >= 80 && age >= 18 ? "Admission Approved" : "Admission Rejected";
 }
-console.log(checkAdmission(90,17))
-console.log(checkAdmission(80,27))  
+// console.log(checkAdmission(90,17))
+// console.log(checkAdmission(80,27))
+
+// Level 2
+// problem 1
+function checkDiscount(totalAmount, isMember) {
+  // totalAmount >= 5000 && isMember === true
+  // → "20% Discount"
+  //
+  // OR
+  //
+  // totalAmount >= 10000
+  // → "20% Discount"
+  //
+  // অন্যথায় → "No Discount"
+  return (totalAmount >= 5000 && isMember === true) || totalAmount >= 10000
+    ? "20% Discount"
+    : "No Discount";
+}
+console.log(checkDiscount(6000, true));
+console.log(checkDiscount(6000, false));
+console.log(checkDiscount(12000, false));
