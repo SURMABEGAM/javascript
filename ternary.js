@@ -190,19 +190,58 @@ function checkAdmission(marks, age) {
 // Level 2
 // problem 1
 function checkDiscount(totalAmount, isMember) {
-  // totalAmount >= 5000 && isMember === true
-  // → "20% Discount"
-  //
-  // OR
-  //
-  // totalAmount >= 10000
-  // → "20% Discount"
-  //
-  // অন্যথায় → "No Discount"
   return (totalAmount >= 5000 && isMember === true) || totalAmount >= 10000
     ? "20% Discount"
     : "No Discount";
 }
+let totalAmount = 40000;
+let isMember = false;
+console.log(checkDiscount(totalAmount, isMember));
 console.log(checkDiscount(6000, true));
 console.log(checkDiscount(6000, false));
 console.log(checkDiscount(12000, false));
+
+//  problem 2
+function checkDelivery(totalAmount, isPremiumUser) {
+  return (totalAmount >= 2000 && isPremiumUser === true) || totalAmount >= 5000
+    ? "Free Delivery"
+    : "Delivery Charge ৳100";
+}
+
+console.log(checkDelivery(2500, true));
+console.log(checkDelivery(2500, false));
+console.log(checkDelivery(6000, false));
+
+// problem 3
+function checkJob(age, experience) {
+  return (age >= 18 && experience >= 1) || age >= 25
+    ? "Eligible"
+    : "Not Eligible";
+}
+console.log(checkJob(20, 2));
+console.log(checkJob(20, 0));
+console.log(checkJob(26, 0));
+
+// problem 4
+function checkAccess(role, isActive) {
+  return role === "admin" || (role === "manager" && isActive === true)
+    ? "Access granted"
+    : "Not Access";
+}
+let role = "admin";
+let isActive = true;
+console.log(checkAccess(role, isActive));
+console.log(checkAccess("manager", true));
+console.log(checkAccess("user", true));
+console.log(checkAccess("admin", false));
+
+// problem 5
+function checkLoan(salary, age) {
+  return (salary >= 50000 && age >= 21) || (salary >= 80000 && age >= 18)
+    ? "Loan Approved"
+    : "Loan Rejected";
+}
+console.log(checkLoan(60000, 25));
+console.log(checkLoan(60000, 19));
+console.log(checkLoan(90000, 19));
+console.log(checkLoan(30000, 30));
