@@ -24,15 +24,16 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
 */
 let weight = 120;
 let height = 5.6;
-let bmi = (weight / height) * 2;
-if (bmi >= 18.5) {
-  console.log("you are underweight");
+let bmi = weight / (height * height);
+
+if (bmi < 18.5) {
+  console.log("You are underweight.");
 } else if (bmi >= 18.5 && bmi <= 24.9) {
-  console.log(" you are normal.");
+  console.log("You are normal.");
 } else if (bmi >= 25 && bmi <= 29.9) {
-  console.log("you are overweight.");
+  console.log("You are overweight.");
 } else {
-  console.log("Otherwise, you are obese.");
+  console.log("You are obese.");
 }
 
 // 3 Grade_Calculator
@@ -46,3 +47,45 @@ Create a simple JavaScript program that takes a student's score as input and ret
     D: 60-69
     F: 0-59
 ***/
+
+function result(marks) {
+  return marks >= 90
+    ? "A"
+    : marks >= 80
+      ? "B"
+      : marks >= 70
+        ? "C"
+        : marks >= 60
+          ? "D"
+          : "F";
+}
+let marks = 100;
+console.log(result(marks));
+
+// problem 4
+/***
+
+if you get more then 80 then inside your friend score. 
+    If your friend get more than 80. then go for a lunch. 
+    if your friend get below 80 but greater than or equal 60 then tell your friend, good luck next time. 
+    if your friend get less than 60 but more than or equal to 40 then, keep your friend's message unseen.
+    if your friend get less than 40, block your friend
+if you get less than 80 go to home and sleep and act sad
+
+Note: 
+use nested if-else-if-else
+*/
+
+let yourScore = 50;
+let friendScore = 75;
+if (yourScore > 80 && friendScore > 80) {
+  console.log("then go for a lunch. ");
+} else if (friendScore < 80 && friendScore >= 60) {
+  console.log("good luck next time.");
+} else if (friendScore < 60 && friendScore >= 40) {
+  console.log("keep your friend's message unseen.");
+} else if (friendScore < 40) {
+  console.log("block your friend");
+} else if (yourScore < 80 || friendScore < 40) {
+  console.log("go to home and sleep and act sad");
+}
