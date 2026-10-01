@@ -224,7 +224,7 @@ console.log(checkJob(26, 0));
 
 // problem 4
 function checkAccess(role, isActive) {
-  return role === "admin" || (role === "manager" && isActive === true)
+  return (role === "admin" || role === "manager") && isActive === true
     ? "Access granted"
     : "Not Access";
 }
