@@ -76,16 +76,53 @@ Note:
 use nested if-else-if-else
 */
 
-let yourScore = 50;
-let friendScore = 75;
-if (yourScore > 80 && friendScore > 80) {
-  console.log("then go for a lunch. ");
-} else if (friendScore < 80 && friendScore >= 60) {
-  console.log("good luck next time.");
-} else if (friendScore < 60 && friendScore >= 40) {
-  console.log("keep your friend's message unseen.");
-} else if (friendScore < 40) {
-  console.log("block your friend");
-} else if (yourScore < 80 || friendScore < 40) {
-  console.log("go to home and sleep and act sad");
-}
+let yourScore = 80;
+let friendScore = 45;
+if (yourScore >= 80) {
+  if (friendScore > 80) {
+    console.log("then go for a lunch. ");
+  } else if (friendScore < 80 && friendScore >= 60) {
+    console.log("good luck next time.");
+  } else if (friendScore < 60 && friendScore >= 40) {
+    console.log("keep your friend's message unseen.");
+  } else console.log("block your friend");
+} 
+else console.log("go to home and sleep and act sad");
+
+/***
+
+you have two numbers in two variables, called: num1, num2
+
+now declare a variable called result. 
+if num1 is bigger than num2 then result will be double of num1. if not, then the value of the variable result will be the sum of num1 and num2.
+
+write a simple if-else. 
+
+also, write it using ternary operator.
+
+ */
+let num1 = 100;
+let num2 = 20;
+let result1 = num1 > num2 ? num1 * 2 : num1 + num2;
+console.log(result1);
+
+// problem 6
+/***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
+
+let age = 65;
+let isStudent = false;
+// let isSenior = true;
+age < 10
+  ? console.log("Free")
+  : isStudent === true
+    ? console.log("Students get a 50% discount")
+    : age >= 60
+      ? console.log(" gets a 15% Discount")
+      : console.log("Regular ticket fare 800 tk");
