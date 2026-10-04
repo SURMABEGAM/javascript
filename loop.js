@@ -46,6 +46,10 @@ let number = 7;
 for (let i = 1; i <= 10; i++) {
   console.log(number * i);
 }
+let number1 = 5;
+for (let i = 0; i <= 10; i++) {
+  console.log(" 5*1 =", number1 * i);
+}
 // Task 6
 // for loop ব্যবহার করে প্রত্যেক বন্ধুর নাম print করো।
 let frien = ["Rahim", "Karim", "Sakib", "Nila", "Jamal"];
