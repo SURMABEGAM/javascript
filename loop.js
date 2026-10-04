@@ -147,3 +147,37 @@ for (let i = 0; i < numbers4.length; i++) {
     console.log(maxNumber);
   }
 }
+// Task 14
+//for loop দিয়ে প্রত্যেক mark-এর জন্য:
+
+// 80+ → "Excellent"
+// 60–79 → "Good"
+// 40–59 → "Pass"
+// < 40 → "Fail"
+// print করো。
+// এরপর কতজন Pass করেছে এবং কতজন Fail করেছে সেটাও count করো।
+let marks2 = [85, 72, 38, 91, 55, 67, 30];
+for (let i = 0; i < marks2.length; i++) {
+  if (marks2[i] >= 80) {
+    console.log(marks2[i], "- Excellent");
+  } else if (marks2[i] >= 60) {
+    console.log(marks2[i], "- Good");
+  } else if (marks2[i] >= 40) {
+    console.log(marks2[i], "-Pass");
+  } else {
+    console.log(marks2[i], "- Fail");
+  }
+}
+
+//Task 15
+// User সর্বোচ্চ 3 বার password দিতে পারবে।
+let correctPassword1 = "admin123";
+for (let i = 1; i <= 3; i++) {
+  let password1 = 12356;
+  if (password1 === correctPassword1) {
+    console.log("Login Successful");
+    break;
+  } else {
+    console.log("Wrong Password");
+  }
+}
