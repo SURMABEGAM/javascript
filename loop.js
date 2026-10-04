@@ -11,10 +11,10 @@ for (let i = 2; i <= 20; i += 2) {
 }
 
 // problem 3
-let friends = ["Rahim", "Karim", "Sakib", "Nila"];
-for (let i = 0; i < friends.length; i++) {
+let friends1 = ["Rahim", "Karim", "Sakib", "Nila"];
+for (let i = 0; i < friends1.length; i++) {
   console.log(i);
-  console.log(friends[i]);
+  console.log(friends1[i]);
 }
 
 // Task 1
@@ -48,7 +48,10 @@ for (let i = 1; i <= 10; i++) {
 }
 // Task 6
 // for loop ব্যবহার করে প্রত্যেক বন্ধুর নাম print করো।
-
+let frien = ["Rahim", "Karim", "Sakib", "Nila", "Jamal"];
+for (let i = 0; i < frien.length; i++) {
+  console.log(frien[i]);
+}
 // Task 7
 // Task 8
 // Task 9
