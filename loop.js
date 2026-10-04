@@ -117,3 +117,33 @@ for (let i = 1; i <= 3; i++) {
     console.log("Wrong Password");
   }
 }
+//  Task 11
+// for loop দিয়ে সব price যোগ করে total বের করো।
+let prices = [500, 1200, 350, 800, 1500];
+let totalPrice = 0;
+for (let i = 0; i < prices.length; i++) {
+  totalPrice = prices[i] + totalPrice;
+  console.log(totalPrice);
+}
+
+// Task 12
+// for loop ব্যবহার করে কতগুলো even number আছে count করো।
+let numbers3 = [12, 7, 20, 15, 8, 33, 40, 51];
+let count3 = 0;
+for (let i = 0; i < numbers3.length; i++) {
+  if (numbers3[i] % 2 === 0) {
+    count3++;
+    console.log(count3);
+  }
+}
+
+// Task 13
+//for loop ব্যবহার করে সবচেয়ে বড় number বের করো।
+let numbers4 = [25, 80, 45, 120, 65, 90];
+let maxNumber = 0;
+for (let i = 0; i < numbers4.length; i++) {
+  if (numbers4[i] > maxNumber) {
+    maxNumber = numbers4[i];
+    console.log(maxNumber);
+  }
+}
