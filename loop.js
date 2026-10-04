@@ -66,17 +66,26 @@ for (let i = 0; i < frien.length; i++) {
 // for loop ব্যবহার করে সব salary যোগ করে total salary বের করো।
 let salaries = [15000, 20000, 18000, 25000, 30000];
 let totalsalary = 0;
-for (let i = 0; i < salaries; i++) {
-  // console.log(totalsalary + i);
+for (let i = 0; i < salaries.length; i++) {
+  totalsalary = totalsalary + salaries[i];
+  console.log(totalsalary);
 }
 // Task 8
 //for loop ব্যবহার করে কতগুলো সংখ্যা 50-এর বেশি সেটা count করো।
 let numbers = [10, 25, 30, 45, 50, 65, 70];
-for (let i = 0; i <= 50; i++) {
-  // console.log(numbers[i]);
+let count1 = 0;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 50) count1++;
+  console.log(count1);
 }
+let count2 = 0;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] <= 50) count2++;
+  console.log(count2);
+}
+
 // Task 9
-//for loop দিয়ে প্রত্যেক mark-এর জন্য:
+//for loop দিয়ে প্রত্যেক mark-এর জন্য:
 
 // 80+ → "Excellent"
 // 60–79 → "Good"
@@ -84,7 +93,27 @@ for (let i = 0; i <= 50; i++) {
 // < 40 → "Fail"
 // print করো。
 let marks = [85, 45, 72, 90, 35, 60];
+for (let i = 0; i < marks.length; i++) {
+  if (marks[i] >= 80) {
+    console.log(marks[i], "= Excellent");
+  } else if (marks[i] >= 60) {
+    console.log(marks[i], "= Good");
+  } else if (marks[i >= 40]) {
+    console.log(marks[i], "= Pass");
+  } else {
+    console.log(marks[i], "= Fail");
+  }
+}
 // Task 10
 // ধরো একজন user সর্বোচ্চ 3 বার password দিতে পারবে।
 // for loop ব্যবহার করে 3 বার পর্যন্ত password check করার logic তৈরি করো।
-// Task 11
+let correctPassword = "12345";
+for (let i = 1; i <= 3; i++) {
+  let password = "12345";
+  if (password === correctPassword) {
+    console.log("Login Successful");
+    break;
+  } else {
+    console.log("Wrong Password");
+  }
+}
