@@ -36,7 +36,7 @@ for (let i = 2; i <= 30; i += 2) {
 }
 // Task 4
 // 10 থেকে 1 পর্যন্ত reverse করে print করো।
-for (let i = 10; i >= 0; i--) {
+for (let i = 10; i >= 1; i--) {
   console.log(i);
 }
 
@@ -44,20 +44,47 @@ for (let i = 10; i >= 0; i--) {
 //for loop দিয়ে 7-এর নামতা তৈরি করো।
 let number = 7;
 for (let i = 1; i <= 10; i++) {
-  console.log(number * i);
+  console.log(number, "X", i, "=", number * i);
 }
 let number1 = 5;
-for (let i = 0; i <= 10; i++) {
-  console.log(" 5*1 =", number1 * i);
+for (let i = 1; i <= 10; i++) {
+  console.log(number1, "X", i, "=", number1 * i);
+}
+
+let number3 = 9;
+for (let i = 1; i <= 10; i++) {
+  console.log(number3 * i);
 }
 // Task 6
 // for loop ব্যবহার করে প্রত্যেক বন্ধুর নাম print করো।
 let frien = ["Rahim", "Karim", "Sakib", "Nila", "Jamal"];
 for (let i = 0; i < frien.length; i++) {
   console.log(frien[i]);
+  console.log(i);
 }
 // Task 7
+// for loop ব্যবহার করে সব salary যোগ করে total salary বের করো।
+let salaries = [15000, 20000, 18000, 25000, 30000];
+let totalsalary = 0;
+for (let i = 0; i < salaries; i++) {
+  // console.log(totalsalary + i);
+}
 // Task 8
+//for loop ব্যবহার করে কতগুলো সংখ্যা 50-এর বেশি সেটা count করো।
+let numbers = [10, 25, 30, 45, 50, 65, 70];
+for (let i = 0; i <= 50; i++) {
+  // console.log(numbers[i]);
+}
 // Task 9
+//for loop দিয়ে প্রত্যেক mark-এর জন্য:
+
+// 80+ → "Excellent"
+// 60–79 → "Good"
+// 40–59 → "Pass"
+// < 40 → "Fail"
+// print করো。
+let marks = [85, 45, 72, 90, 35, 60];
 // Task 10
+// ধরো একজন user সর্বোচ্চ 3 বার password দিতে পারবে।
+// for loop ব্যবহার করে 3 বার পর্যন্ত password check করার logic তৈরি করো।
 // Task 11
