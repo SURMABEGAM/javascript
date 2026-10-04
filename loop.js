@@ -157,6 +157,8 @@ for (let i = 0; i < numbers4.length; i++) {
 // print করো。
 // এরপর কতজন Pass করেছে এবং কতজন Fail করেছে সেটাও count করো।
 let marks2 = [85, 72, 38, 91, 55, 67, 30];
+let passcount = 0;
+let failcount = 0;
 for (let i = 0; i < marks2.length; i++) {
   if (marks2[i] >= 80) {
     console.log(marks2[i], "- Excellent");
@@ -164,11 +166,14 @@ for (let i = 0; i < marks2.length; i++) {
     console.log(marks2[i], "- Good");
   } else if (marks2[i] >= 40) {
     console.log(marks2[i], "-Pass");
+    passcount++;
   } else {
     console.log(marks2[i], "- Fail");
+    failcount++;
   }
 }
-
+console.log("Pass:", passcount);
+console.log("Fail:", failcount);
 //Task 15
 // User সর্বোচ্চ 3 বার password দিতে পারবে।
 let correctPassword1 = "admin123";
