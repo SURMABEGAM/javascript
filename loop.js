@@ -186,3 +186,17 @@ for (let i = 1; i <= 3; i++) {
     console.log("Wrong Password");
   }
 }
+
+let students = [
+  { name: "Rahim", mark: 85 },
+  { name: "Karim", mark: 35 },
+  { name: "Sakib", mark: 72 },
+  { name: "Nila", mark: 28 },
+  { name: "Jamal", mark: 60 },
+];
+
+for (let i = 0; i < students.length; i++) {
+  if (students[i].mark < 40) {
+    console.log(students[i].name, "=", students[i].mark);
+  }
+}
