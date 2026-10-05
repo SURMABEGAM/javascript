@@ -186,7 +186,7 @@ for (let i = 1; i <= 3; i++) {
     console.log("Wrong Password");
   }
 }
-
+// Task 16
 let students = [
   { name: "Rahim", mark: 85 },
   { name: "Karim", mark: 35 },
@@ -198,5 +198,43 @@ let students = [
 for (let i = 0; i < students.length; i++) {
   if (students[i].mark < 40) {
     console.log(students[i].name, "=", students[i].mark);
+  }
+}
+// Task 17
+let students1 = [
+  { name: "Rahim", mark: 85 },
+  { name: "Karim", mark: 92 },
+  { name: "Sakib", mark: 78 },
+  { name: "Nila", mark: 95 },
+  { name: "Jamal", mark: 88 },
+];
+// Task 18
+let topMark = 0;
+let topStudent = "";
+for (let i = 0; i < students1.length; i++) {
+  if (students1[i].mark > topMark) {
+    topMark = students1[i].mark;
+    topStudent = students1[i].name;
+    console.log(topStudent, "=", topMark);
+  }
+}
+// Task 19
+let products = [
+  { name: "Laptop", price: 65000 },
+  { name: "Phone", price: 30000 },
+  { name: "Monitor", price: 18000 },
+  { name: "Keyboard", price: 2500 },
+  { name: "Mouse", price: 1200 },
+];
+
+let highestPrice = 0;
+let expensiveProduct = "";
+
+for (let i = 0; i < products.length; i++) {
+  if (products[i].price > highestPrice) {
+    highestPrice = products[i].price;
+    expensiveProduct = products[i].name;
+
+    console.log(expensiveProduct, "=", highestPrice);
   }
 }
