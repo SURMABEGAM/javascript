@@ -247,12 +247,12 @@ let employees = [
   { name: "Jamal", salary: 38000 },
 ];
 
-let highestSalary = 0;
-let topEmployee = "";
+let lowestSalary = employees[0].salary;
+let lowestEmployee = employees[0].name;
 for (let i = 0; i < employees.length; i++) {
-  if (employees[i].salary > highestSalary) {
-    highestSalary = employees[i].salary;
-    topEmployee = employees[i].name;
+  if (employees[i].salary < lowestSalary) {
+    lowestSalary = employees[i].salary;
+    lowestEmployee = employees[i].name;
   }
-  console.log(topEmployee, "=", highestSalary);
 }
+console.log(lowestEmployee, "=", lowestSalary);
