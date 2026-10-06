@@ -238,3 +238,21 @@ for (let i = 0; i < products.length; i++) {
     console.log(expensiveProduct, "=", highestPrice);
   }
 }
+// Task 20
+let employees = [
+  { name: "Rahim", salary: 25000 },
+  { name: "Karim", salary: 45000 },
+  { name: "Sakib", salary: 32000 },
+  { name: "Nila", salary: 55000 },
+  { name: "Jamal", salary: 38000 },
+];
+
+let highestSalary = 0;
+let topEmployee = "";
+for (let i = 0; i < employees.length; i++) {
+  if (employees[i].salary > highestSalary) {
+    highestSalary = employees[i].salary;
+    topEmployee = employees[i].name;
+  }
+  console.log(topEmployee, "=", highestSalary);
+}
