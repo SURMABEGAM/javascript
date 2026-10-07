@@ -256,3 +256,12 @@ for (let i = 0; i < employees.length; i++) {
   }
 }
 console.log(lowestEmployee, "=", lowestSalary);
+
+// while loop
+// problem 1
+// while loop ব্যবহার করে 1 থেকে 10 পর্যন্ত print করো।
+
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+}
