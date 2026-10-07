@@ -261,7 +261,34 @@ console.log(lowestEmployee, "=", lowestSalary);
 // problem 1
 // while loop ব্যবহার করে 1 থেকে 10 পর্যন্ত print করো।
 
-let i = 1;
-while (i <= 10) {
+let i = 10;
+while (i <= 50) {
   console.log(i);
+  i++;
 }
+
+//problem 2
+//while loop দিয়ে 2 থেকে 20 পর্যন্ত শুধু even number print করো।
+let i1 = 2;
+while (i1 <= 20) {
+  console.log(i1);
+  i1 += 2;
+}
+
+// Task 3 — Reverse
+//while loop দিয়ে 10 থেকে 1 পর্যন্ত reverse করে print করো।
+let i2 = 10;
+while (i2 >= 1) {
+  console.log(i2);
+  i2--;
+}
+// Task 4 — Total
+// while loop ব্যবহার করে সবগুলো number যোগ করে total বের করো।
+let numbersA = [10, 20, 30, 40, 50];
+let num = 0;
+let sum = 0;
+while (num < numbersA.length) {
+  sum = sum + numbersA[num];
+  num++;
+}
+console.log(sum);
